@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Степан Компанеец</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Draco is free PSD &amp; HTML template by @afnizarnur">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		.intro h1:before {
+			content: 'SKSK';
+		}
+	</style>
+</head>
+<body>
+
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+					<span class="logo">SK</span>
+				</div>
+				<nav id="navbar-1" class="navbar item-nav">
+					<ul>
+						<li class="active"><a href="#about">Обо мне</a></li> 	<!-- Ссылки в шапке -->
+						<li><a href="#experiences">Опыт работы</a></li>
+						<li><a href="#skills">Навыки</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Шапка -->
+	<div class="intro section" id="about">
+		<div class="container">
+			<p>Привет, я Степан</p>
+			<div class="units-row units-split wrap">
+				<div class="unit-20">
+					<img src="img/ava.jpg" alt="Avatar">
+				</div>
+				<div class="unit-80">
+					<h1>Могу, умею, практикую:<br><span id="typed"></span></h1>
+				</div>
+				<p>
+					Многолетний опыт работы с детьми развил во мне навыки общения с людьми, нахождения методов решения проблемы "здесь и сейчас", которые я применяю в своей работе ежедневно!
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Опыт работы -->
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>Опыт<br>Работы</h1>
+			<ul class="work-list">
+				<li>2021-2023</li>
+				<li><a href="#">ПАО "Мегафон"</a></li>
+				<li>Специалист по федеральному тестированию</li>
+				<li>- Участие в разработке и внедрение автотестов на базе Jenkins + Robot.Framework</li>
+				<li>- Внедрение и поддержка инструментов для проведения тестов</li>
+				<li>- Взаимодействие со смежными подразделениями (ИТ, Маркетинг) с целью упрощения и оптимизации процессов для сокращения сроков и повышения качества тестирования</li>
+				<li>- Курирование и тестирование инициатив</li>
+			</ul>
+			<ul class="work-list">
+				<li>2017-2021</li>
+				<li><a href="#">ДОЦ "Аквапузики"</a></li>
+				<li>Инструктор грудничкового плавания</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<div class="skills section second" id="skills">
+		<!-- Навыки -->
+		<div class="container">
+			<h1>Навыки</h1>
+			<ul class="skill-list list-flat">
+				<li>Web Technology</li>
+				<li>HTML / CSS / Javascript / REST API / Json / XML</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Database</li>
+				<li>MySQL</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Soft</li>
+				<li>Postman / Jira / Confluence / Miro / Git</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="quote">
+		<div class="container text-centered">
+			<h1>«В любой программе есть хотя-бы одна ошибка»</h1>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="units-row">
+				<div class="unit-50">
+					<i class="fa fa-phone"></i> +7-937-205-19-25
+				</div>
+				<div class="unit-50">
+					<ul class="social list-flat right">
+						<li><a href="mailto:styopa.kom@yandex.ru"><i class="fa fa-send"></i></a></li>
+						<li><a href="https://instagram.com/stepaneec?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+	<script src="js/kube.min.js"></script>
+	<script src="js/site.js"></script>
+	<!-- Бегущая строка -->
+	<script>
+		function newTyped() { } $(function () {
+			$("#typed").typed({
+                strings: ["HTML", "CSS", "Javascript", "REST API", "Json", "XML", "Postman", "Jira", "Confluence", "Miro", "Git", "MySQL"],
+
+						typeSpeed: 30, backDelay: 1000, contentType: "html", loop: !0, resetCallback: function () { newTyped() }
+			}), $(".reset").click(function () { $("#typed").typed("reset") })
+		});
+	</script>
+</body>
+</html>
